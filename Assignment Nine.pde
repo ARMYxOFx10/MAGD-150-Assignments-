@@ -4,6 +4,7 @@ int randomThanksgiving;
 PImage happy;
 PImage Peanut;
 
+//Spawns the corn and lets it move and offsets it by 10 each time
 class corn{
   int centerx,centery,offset1,offset2;
   
@@ -31,6 +32,7 @@ class corn{
 }
 corn mycorn;
 
+//Spawns the bread and offsets it by 10 
 class bread{
   int centerX,centerY,offset3,offset4;
 
@@ -59,6 +61,7 @@ bread mybread;
 }
 bread mybread;
   
+  //Spawns the picture and has a array also to pick a random number to spawn a certain text
 void setup(){
   size(800,600);
   myThanksgiving = new String [3];
@@ -72,6 +75,7 @@ Peanut = loadImage("Peanut.jpg");
 mycorn = new corn(200,100,20,35);
 mybread = new bread(300,200,50,65);
 }
+//This displays the corn and bread and moves it
 void draw(){
   background(123);
   image(happy,0,0,300,300);
