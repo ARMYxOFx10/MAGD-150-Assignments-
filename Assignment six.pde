@@ -1,9 +1,10 @@
+//Sets up the lazer and gives the frame rate
 boolean laser = false;
 void setup(){
   size(800,600);
   frameRate(15);
 }
-
+//moves to lazers
 void draw(){
   background(255,0,0);
 if (laser == false){
@@ -17,7 +18,7 @@ if (laser == false){
   textSaysGameOver();
 }
 }
-
+//mousePressed changed to a different state 
 void mousePressed(){
   laser = !laser;
   println("change");
