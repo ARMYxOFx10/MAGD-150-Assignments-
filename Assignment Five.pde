@@ -12,6 +12,7 @@ void setup(){
  noStroke();
  rect(0,300,800,600);
 }
+//This draws the stick figure to kick the ball
 void draw(){
   background(82,227,218);
    fill(14,155,8);
@@ -31,6 +32,7 @@ void draw(){
  line(mouseX,350,mouseX-15,400);
  update();
 }
+//this updates the ball and lets the football move horizontally
 void update(){
 fill(139,56,7);
 stroke(0);
