@@ -1,15 +1,8 @@
 void setup(){
   size(800, 600);
-}
-void mousePressed(){
-  arc(mouseX, mouseY, 80, 80, 0, QUARTER_PI, PIE);
-  ellipse(mouseX+20, mouseY+10, 10, 10);
-  setup();
-}
-void draw(){
-   //PIZZA SLICES
-   background(248, 250, 177);
-     //TV 
+  background(248, 250, 177);
+  
+  //TV 
   fill(0);
   stroke(0);
   rect(280, 225, 200, 100);
@@ -88,6 +81,14 @@ void draw(){
    ellipse(545, 410, 10, 10);
    ellipse(545, 430, 10, 10);
    ellipse(520, 430, 10, 10);
+}
+void mousePressed(){
+  arc(mouseX, mouseY, 80, 80, 0, QUARTER_PI, PIE);
+  ellipse(mouseX+20, mouseY+10, 10, 10);
+  setup();
+}
+void draw(){
+   //PIZZA SLICES
    noFill();
    fill(255, 150, 70);
    arc(mouseX, mouseY, 80, 80, 0, QUARTER_PI, PIE);
@@ -95,7 +96,7 @@ void draw(){
    noFill();
    fill(234, 57, 21);
    ellipse(mouseX+20, mouseY+10, 10, 10);
-   ellipse(mouseX+30, mouseY+10, 10, 10);
+   ellipse(320, 505, 10, 10);
    ellipse(230, 560, 10, 10);
    ellipse(217, 560, 10, 10);
 }
