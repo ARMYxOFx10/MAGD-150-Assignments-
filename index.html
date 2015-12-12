@@ -12,369 +12,54 @@
   <p>Description: On my FINAL SKETCH ASSIGNMENT</p>
         <br />
         <br />
-  <h1>Big Ben</h1>
+  <h1>Your Sketch1 Title</h1>
   <script type="text/processing" data-processing-target="mycanvas1">
   
-  void setup(){
-  size(400, 400); 
-  
-  fill(240, 232, 162);
-  rectMode(CENTER);
-  rect(200, 200, 50, 200, 5);
- 
- //VERY TOP OF TOWER
-  line(200, 60, 200, 30);
-  line(188, 40, 213, 40);
-  rect(200, 70, 30, 30, 5);
- 
-  //TOP PART OF CLOCK
-  rect(200, 100, 50, 50, 5);
-  point(205, 105);
-  point(195, 115);
-  
-  //SQUARE AROUND CLOCK
-  noFill();
-  fill(170, 127, 46);
-  rect(200, 125, 62, 62, 5);
- 
-  //CLOCK PART
-  noFill();
-  fill(245, 241, 210);
-  ellipseMode(CENTER);
-  ellipse(200, 125, 60, 60);
-  ellipse(200, 125, 40, 40);
-  line(200, 125, 205, 105);
-  line(200, 125, 195, 115);
-}
+  <!-- Your sketch1 goes here -->
 
   </script>
   <canvas id="mycanvas1"></canvas>
-  <p>Description: First processing project using shapes to create Big Ben.</p>
+  <p>Description:</p>
         <br />
         <br />
-  <h1>Living room</h1>
+  <h1>Your Sketch2 Title</h1>
   <script type="text/processing" data-processing-target="mycanvas2">
   
-  void setup(){
-  size(800, 600);
-}
-void mousePressed(){
-  arc(mouseX, mouseY, 80, 80, 0, QUARTER_PI, PIE);
-  ellipse(mouseX+20, mouseY+10, 10, 10);
-  setup();
-}
-void draw(){
-   //PIZZA SLICES
-   background(248, 250, 177);
-     //TV 
-  fill(0);
-  stroke(0);
-  rect(280, 225, 200, 100);
-  rect(370, 300, 20, 50);
-   noFill();
-   fill(170, 170, 170);
-   rect(295, 240, 170, 70);
-   point(310, 210);
-   point(440, 210);
-   
-   //TV STAND
-   noFill();
-   fill(178, 117, 56);
-   rect(255, 350, 250, 100);
-   line(325, 450, 325, 350);
-   line(425, 450, 425, 350);
-   noFill();
-   fill(0);
-   triangle(310, 390, 300, 400, 320, 400); 
-   triangle(440, 390, 430, 400, 450, 400);
-   
-   //LIGHTS
-   noFill();
-   fill(183, 183, 183);
-   ellipse(150, 420, 50, 50);
-   ellipse(600, 420, 50, 50);
-   line(600, 420, 600, 200);
-   line(150, 420, 150, 200);
-   point(600, 420);
-   point(150, 420);
-   
-   //TOP OF LAMPS
-   noFill();
-   fill(118, 89, 60);
-   beginShape(QUAD);
-   vertex(180, 160);
-   vertex(120, 160);
-   vertex(100, 200);
-   vertex(200, 200);
-   endShape();
-   
-   beginShape(QUAD);
-   vertex(630, 160);
-   vertex(570, 160);
-   vertex(550, 200);
-   vertex(650, 200);
-   endShape();
-   
-   //Speakers
-    beginShape();
-   vertex(200, 400);
-   vertex(230, 400);
-   vertex(230, 420);
-   vertex(250, 420);
-   vertex(250, 440);
-   vertex(200, 440);
-   endShape(CLOSE);
-   
-   beginShape();
-   vertex(560, 400);
-   vertex(530, 400);
-   vertex(530, 420);
-   vertex(510, 420);
-   vertex(510, 440);
-   vertex(560, 440);
-   endShape(CLOSE);
-   
-   //SPEAKER CIRCLES FOR THE LEFT SPREAKER 
-   noFill();
-   fill(0);
-   ellipse(215, 410, 10, 10);
-   ellipse(215, 430, 10, 10);
-   ellipse(240, 430, 10, 10);
-   
-   //SPEAKER CIRCLES FOR THE RIGHT SPEAKER
-   ellipse(545, 410, 10, 10);
-   ellipse(545, 430, 10, 10);
-   ellipse(520, 430, 10, 10);
-   noFill();
-   fill(255, 150, 70);
-   arc(mouseX, mouseY, 80, 80, 0, QUARTER_PI, PIE);
-   arc(200, 550, 80, 80, 0, QUARTER_PI, PIE);
-   noFill();
-   fill(234, 57, 21);
-   ellipse(mouseX+20, mouseY+10, 10, 10);
-   ellipse(mouseX+30, mouseY+10, 10, 10);
-   ellipse(230, 560, 10, 10);
-   ellipse(217, 560, 10, 10);
-}
-void keyPressed(){
-  fill(255, 0, 0);
-  rect(295, 240, 170, 70);
-}
+  <!-- Your sketch2 goes here -->
 
   </script>
   <canvas id="mycanvas2"></canvas>
-  <p>Description: This is my third project. Use the mouse to control the pizza. You can press the mouse or a key and see what happens. </p>
+  <p>Description:</p>
         <br />
         <br />
-  <h1>The kick is good!</h1>
+  <h1>Your Sketch3 Title</h1>
   <script type="text/processing" data-processing-target="mycanvas3">
   
-  float a = 145;
-float b = 155;
-float c = 150;
-float velocityY = 0.0;
-float gravity = .05;
-float posX = 150;
-int posY = 400;
-
-void setup(){
- size(800, 600);
- fill(14,155,8);
- noStroke();
- rect(0,300,800,600);
-}
-//This draws the stick figure to kick the ball
-void draw(){
-  background(82,227,218);
-   fill(14,155,8);
- noStroke();
- rect(0,300,800,600);
- stroke(0);
- line(700,600,700,450);
- line(650,400,750,500);
- line(650,400,650,300);
- line(750,500,750,300);
- fill(255,223,157);
- line(mouseX,250,mouseX,350);
- ellipse(mouseX,250,50,50);
- line(mouseX,300,mouseX+15,350);
- line(mouseX,300,mouseX-15,350);
- line(mouseX,350,mouseX+15,400);
- line(mouseX,350,mouseX-15,400);
- update();
-}
-//this updates the ball and lets the football move horizontally
-void update(){
-fill(139,56,7);
-stroke(0);
-arc(posX, posY, 20, 50, 0, PI+PI);
-stroke(255,255,255);
-
-line(a,410,b,410);
-line(a,405,b,405);
-line(a,400,b,400);
-line(a,395,b,395);
-line(a,390,b,390);
-line(c,415,c,385);
-  velocityY = gravity + velocityY;
-posX = velocityY + posX;
-a = velocityY + a;
-b = velocityY + b;
-c = velocityY + c;
-}
+  <!-- Your sketch3 goes here -->
 
   </script>
   <canvas id="mycanvas3"></canvas>
-  <p>Description: This is my fifth project and you can control the stick figure and kick the football.</p>
+  <p>Description:</p>
         <br />
         <br />
-  <h1> Star Wars</h1>
+  <h1>Your Sketch4 Title</h1>
   <script type="text/processing" data-processing-target="mycanvas4">
   
-  //Sets up the lazer and gives the frame rate
-boolean laser = false;
-void setup(){
-  size(800,600);
-  frameRate(15);
-}
-//moves to lazers
-void draw(){
-  background(255,0,0);
-if (laser == false){
-  background(0);
-  fill(7,235,245);
-  rect(mouseX,mouseY,10,100,200);
-  fill(113,118,118);
-  rect(mouseX,mouseY+90,10,20,200);
-  drawRandomRect();
-}else{
-  textSaysGameOver();
-}
-}
-//mousePressed changed to a different state 
-void mousePressed(){
-  laser = !laser;
-  println("change");
-}
-
-void drawRandomRect(){
-fill(94,255,3);
-  float a = random(0, width);
-  float b = random(0, width);
-  float c = 100;
-  float d = 10;
-  float e = 200;
-  rect(a,b,c,d,e);
-}
-
-void textSaysGameOver(){
-  float a = random(0,height);
-  float b = random(0,height);
-  textSize(100);
-  text("GAME OVER",a,b);
-}
+  <!-- Your sketch4 goes here -->
 
   </script>
   <canvas id="mycanvas4"></canvas>
-  <p>Description: This is my sixth assignment and you can control the Lightsaber and when you click the mouse you lose.</p>
+  <p>Description:</p>
         <br />
         <br />
-  <h1>Thanksgiving</h1>
+  <h1>Your Sketch5 Title</h1>
   <script type="text/processing" data-processing-target="mycanvas5">
   
- String [] myThanksgiving;
-String currentThanksgiving;
-int randomThanksgiving;
-PImage happy;
-PImage Peanut;
-
-//Spawns the corn and lets it move and offsets it by 10 each time
-class corn{
-  int centerx,centery,offset1,offset2;
-  
-  corn(){
-    centerx = round(random(0, width));
-    centery = round(random(0, height));
-    offset1 = 10;
-    offset2 = 10;
-  }
-  corn(int _centerx, int _centery, int _offset1, int _offset2){
-    centerx = _centerx;
-    centery = _centery;
-    offset1 = _offset1;
-    offset2 = _offset2;
-  }
-  void display(){
-    fill(220,255,0);
-    rect(centerx,centery,offset1,offset2,10);
-  }
-  void move(){
-    centerx = centerx + (round(random(-50,50)));
-    centery = centery + (round(random(-50,50)));
-  }
-  corn mycorn;
-}
-corn mycorn;
-
-//Spawns the bread and offsets it by 10 
-class bread{
-  int centerX,centerY,offset3,offset4;
-
-bread(){
-  centerX = round(random(0, width));
-  centerY = round(random(0, height));
-  offset3 = 10;
-  offset4 = 10;
-}
-bread(int _centerX, int _centerY, int _offset3, int _offset4){
-  centerX = _centerX;
-  centerY = _centerY;
-  offset3 = _offset3;
-  offset4 = _offset4;
-}
-void display(){
-  fill(147,114,70);
-  rect(centerX,centerY,offset3,offset4,10);
- 
-}
-void move(){
-  centerX = centerX + (round(random(-50,50)));
-  centerY = centerY + (round(random(-50,50)));
-}
-bread mybread;
-}
-bread mybread;
-  
-  //Spawns the picture and has a array also to pick a random number to spawn a certain text
-void setup(){
-  size(800,600);
-  myThanksgiving = new String [3];
-  myThanksgiving[0] = "great";
-  myThanksgiving[1] = "happy";
-  myThanksgiving[2] = "amazing";
-  randomThanksgiving = (round(random(myThanksgiving.length-1)));
-  currentThanksgiving = myThanksgiving[randomThanksgiving];
-happy = loadImage("https://cloud.githubusercontent.com/assets/15331512/11756401/3e6f010a-a01f-11e5-81b2-850ff624e239.jpg");
-Peanut = loadImage("https://cloud.githubusercontent.com/assets/15331512/11756404/4998bb02-a01f-11e5-80df-1dd2c888e07f.jpg");
-mycorn = new corn(200,100,20,35);
-mybread = new bread(300,200,50,65);
-}
-//This displays the corn and bread and moves it
-void draw(){
-  background(123);
-  image(happy,0,0,300,300);
-  image(Peanut,500,300,300,300);
-  mycorn.move();
-  mycorn.display();
-  mybread.move();
-  mybread.display();
-  fill(113,60,3);
-  textSize(25);
-  text("Have " + "a " + currentThanksgiving + " Thanksgiving" , 300,200);
-}
+  <!-- Your sketch5 goes here -->
 
   </script>
   <canvas id="mycanvas5"></canvas>
-  <p>Description: This is my ninth project and it's just pictures and moving objects.</p>
+  <p>Description:</p>
   </body>
 </html>  
+ 
